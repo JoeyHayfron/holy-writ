@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/adView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:background="?attr/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holy Writ"
+        android:fontFamily="@font/chomsky"
+        android:textSize="40sp"
+        android:textColor="?attr/colorText"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="This is an app to search the Cambridge King James Bible either by text or reference.\n\n Search by text can be done by entering the text you wish to search for example 'in the begining' can be searched to find all references to that in the bible."
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="?attr/colorText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="?attr/colorText"
+        android:text="The reference mode can be used to search the bible by reference. The accepted format is: \n the first 3 letters of the book followed by the chapter, (and/or) a colon and a verse or a range of verses or a semi-colon to separate on book reference search from another. Examples are as follows\n\nGen1 -> For the entire first chapter of Genesis\nGen1:1 -> For the first verse of the first chapter of Genesis\nGen1:1-4 -> For the first 4 verses of the first chapter of Genesis\nGen1:1-4;Exo1:1-2 -> For the first 4 verses of the first chapter of Genesis and the first 2 verses of the first chapter of Exodus."
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="6sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="?attr/colorText"
+        android:text="\n\nIt is important to note the absence of space when using the ref mode"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="4sp"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="ca-app-pub-8979184693637722/229200636">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

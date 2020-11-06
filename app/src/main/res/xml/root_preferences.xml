@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Settings">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="dark_mode"
+            app:summaryOff="Enable Dark Mode"
+            app:summaryOn="Disable Dark Mode"
+            app:title="Dark Mode" />
+
+        <ListPreference
+            app:defaultValue="small"
+            app:entries="@array/font_entries"
+            app:entryValues="@array/font_values"
+            app:key="font"
+            app:title="Font Size"
+            app:summary="Change Font Size" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

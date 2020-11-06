@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListOfColour">
+        <attr name="colorBackground" format="color" />
+        <attr name="colorText" format="color" />
+        <attr name="cardBg" format="color" />
+        <attr name="fontHeading" format="dimension" />
+        <attr name="fontNormal" format="dimension" />
+        <attr name="navHeaderBg" format="color" />
+        <attr name="navBodyBg" format="color" />
+        <attr name="navText" format="color" />
+    </declare-styleable>
+</resources>
